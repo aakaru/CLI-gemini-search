@@ -14,7 +14,7 @@ import (
 	"strings"
 )
 
-// searchCmd represents the search command
+
 var searchCmd = &cobra.Command{
 	Use:   "search",
 	Short: "A CLI with Gemini integrated in it",
@@ -40,7 +40,7 @@ func init() {
 }
 func getResponse(args []string) {
 
-	// Creating a sentence out of a slice
+
 	userArgs := strings.Join(args[0:], " ")
 
 	ctx := context.Background()
